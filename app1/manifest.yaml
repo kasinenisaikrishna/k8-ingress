@@ -55,7 +55,7 @@ metadata:
 spec:
     ingressClassName: alb
     rules:
-    - host: "app1.daws81s.online"
+    - host: "app1.daws81s.online" #replace with our domain i.e. dawsconnect.org
       http:
         paths:
         - pathType: Prefix
