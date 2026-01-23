@@ -47,7 +47,6 @@ metadata:
       #kubernetes.io/ingress.class: alb
       alb.ingress.kubernetes.io/scheme: internet-facing
       alb.ingress.kubernetes.io/target-type: ip
-      #create our own certificate-arn and paste below
       alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:315069654700:certificate/eefec79d-8012-4e7e-a530-baf154b833f2
       alb.ingress.kubernetes.io/listen-ports: '[ {"HTTPS": 443}]'
       alb.ingress.kubernetes.io/tags: Environment=dev,Team=test
@@ -55,7 +54,7 @@ metadata:
 spec:
     ingressClassName: alb
     rules:
-    - host: "app2.dawsconnect.org" #replace with our domain i.e. dawsconnect.org
+    - host: "app2.daws81s.online"
       http:
         paths:
         - pathType: Prefix
